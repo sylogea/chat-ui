@@ -2,6 +2,8 @@
 
 [Vite](https://vitejs.dev/) | [React](https://react.dev/) | [Redux Toolkit](https://redux-toolkit.js.org/)
 
+![Preview](./preview.png)
+
 ```
 chat-ui/
 ├── src/
@@ -16,6 +18,9 @@ chat-ui/
 ├── vite.config.js
 └── README.md
 ```
+
+## Requirements
+1. Node.js
 
 ## Installation
 ```
