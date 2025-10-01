@@ -1,0 +1,123 @@
+:root {
+	--blue: #2590CE;
+	--border: rgb(225, 225, 225);
+	--placeholder: #AAAAAA;
+	--black: #000000;
+	--white: #FFFFFF;
+}
+
+/* @font-face {
+	font-family: "NHG Display";
+	src: url("./assets/fonts/neue-haas-grotesk-display-pro-55-roman.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NHG Text";
+	src: url("./assets/fonts/neue-haas-grotesk-text-pro-55-roman.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: "Inter";
+	src: url("./assets/fonts/inter-var.ttf") format("truetype-variations");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("./assets/fonts/inter-var-italic.ttf") format("truetype-variations");
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: var(--white);
+	color: var(--black);
+	font-family: "Inter";
+}
+
+input {
+	font-family: "Inter";
+}
+
+.page {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.safe-area {
+	height: 64px;
+}
+
+.center {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: 300;
+	margin: 0 0 2rem 0;
+	text-align: center;
+}
+
+.search {
+	position: relative;
+	width: 560px;
+	max-width: 90vw;
+}
+
+.box {
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.4;
+	padding: 1rem 4rem 1rem 1.25rem;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	background: var(--white);
+	color: var(--black);
+	outline: none;
+	resize: none;
+	overflow: hidden;
+}
+
+.box::placeholder {
+	color: var(--placeholder);
+	font-weight: 300;
+}
+
+.go {
+	position: absolute;
+	right: 0.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 0;
+	border-radius: 999px;
+	background: var(--blue);
+	color: var(--white);
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
